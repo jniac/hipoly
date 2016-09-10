@@ -621,6 +621,17 @@ hipoly.browserDetection = function() {
 
 
 
+hipoly.forRange = function(n, callback, s) {
+
+    if (isNaN(s))
+        s = 1;
+
+    for (var i = 0; i < n; i += s) 
+        callback.apply();
+
+};
+
+
 
 
 
