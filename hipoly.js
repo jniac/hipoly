@@ -631,6 +631,12 @@ hipoly.forRange = function(n, callback, s) {
 
 };
 
+// test branch
+
+hispoly.newBranch = function() {
+    
+}
+
 
 
 
