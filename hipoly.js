@@ -1,4 +1,4 @@
-var hipoly = { };
+var hipoly = hipoly || { };
 
 // hipoly / Math
 // getRandom
@@ -663,7 +663,7 @@ hispoly.newBranch = function() {
         2. On the stack (via Stack().defaultScope which could be define via the constructor)
         3. On the stack execution methods (execute, executeWhile, dump, dumpWhile)
 
-1.7: Allow minified with http://closure-compiler.appspot.com/ requires to :
+1.7: Allow minified with http://closure-compiler.appspot.com/ requires to conform to strict ES5 :
     rename arguments to args (because arguments is used by js as the accessor of any function arguments).
     remove get accessor in a ES6 way, concerned: Call.destroyed
 
